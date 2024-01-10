@@ -55,8 +55,9 @@ def get_this_session_info() -> Optional[SessionInfo]:
 def get_this_session() -> AppSession:
     this_session_info = get_this_session_info()
     if this_session_info is None:
-        raise NoSessionError(
-            "Oh noes. Couldn't get your Streamlit Session object. "
-            "Are you doing something fancy with threads?"
-        )
+        pass
+        #raise NoSessionError(
+        #    "Oh noes. Couldn't get your Streamlit Session object. "
+        #    "Are you doing something fancy with threads?"
+        #)
     return this_session_info.session
