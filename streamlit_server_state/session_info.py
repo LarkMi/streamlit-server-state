@@ -54,6 +54,7 @@ def get_this_session_info() -> Optional[SessionInfo]:
 
 def get_this_session() -> AppSession:
     this_session_info = get_this_session_info()
+    print('this_session_info:',this_session_info)
     if this_session_info is None:
         
         raise NoSessionError(
